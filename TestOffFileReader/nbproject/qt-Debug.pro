@@ -2,13 +2,13 @@
 # Use project properties -> Build -> Qt -> Expert -> Custom Definitions.
 TEMPLATE = app
 DESTDIR = dist/Debug/GNU-Linux-x86
-TARGET = TestOffFillReader
+TARGET = TestOffFileReader
 VERSION = 1.0.0
 CONFIG -= debug_and_release app_bundle lib_bundle
 CONFIG += debug 
 PKGCONFIG +=
-QT = core gui
-SOURCES +=
+QT = core gui opengl
+SOURCES += source/Fenetre.cc source/ZoneAffichage.cc source/classecarre.cc source/classecercle.cc source/classeellipse.cc source/classeobjet2d.cc source/classepoint.cc source/classepolygonne.cc source/classerectangle.cc source/classetriangle.cc source/classetriangleequilateral.cc source/classetriangleisocele.cc source/classetrianglerectangle.cc source/classevecteur.cc source/fonctions.cc source/main.cc
 HEADERS +=
 FORMS +=
 RESOURCES +=
@@ -20,5 +20,5 @@ UI_DIR =
 QMAKE_CC = gcc
 QMAKE_CXX = g++
 DEFINES += 
-INCLUDEPATH += 
+INCLUDEPATH += headers 
 LIBS += 

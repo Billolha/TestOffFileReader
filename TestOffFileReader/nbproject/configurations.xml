@@ -4,6 +4,26 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="headers" displayName="headers" projectFiles="true">
+        <itemPath>headers/Fenetre.hh</itemPath>
+        <itemPath>headers/ZoneAffichage.hh</itemPath>
+        <itemPath>headers/classecarre.hh</itemPath>
+        <itemPath>headers/classecercle.hh</itemPath>
+        <itemPath>headers/classeellipse.hh</itemPath>
+        <itemPath>headers/classeobjet2d.hh</itemPath>
+        <itemPath>headers/classepoint.hh</itemPath>
+        <itemPath>headers/classepolygonne.hh</itemPath>
+        <itemPath>headers/classerectangle.hh</itemPath>
+        <itemPath>headers/classetriangle.hh</itemPath>
+        <itemPath>headers/classetriangleequilateral.hh</itemPath>
+        <itemPath>headers/classetriangleisocele.hh</itemPath>
+        <itemPath>headers/classetrianglerectangle.hh</itemPath>
+        <itemPath>headers/classevecteur.hh</itemPath>
+        <itemPath>headers/fonctions.hh</itemPath>
+        <itemPath>headers/include.hh</itemPath>
+        <itemPath>headers/main.hh</itemPath>
+        <itemPath>headers/tmp.hh</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,7 +32,24 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>main.cpp</itemPath>
+      <logicalFolder name="source" displayName="source" projectFiles="true">
+        <itemPath>source/Fenetre.cc</itemPath>
+        <itemPath>source/ZoneAffichage.cc</itemPath>
+        <itemPath>source/classecarre.cc</itemPath>
+        <itemPath>source/classecercle.cc</itemPath>
+        <itemPath>source/classeellipse.cc</itemPath>
+        <itemPath>source/classeobjet2d.cc</itemPath>
+        <itemPath>source/classepoint.cc</itemPath>
+        <itemPath>source/classepolygonne.cc</itemPath>
+        <itemPath>source/classerectangle.cc</itemPath>
+        <itemPath>source/classetriangle.cc</itemPath>
+        <itemPath>source/classetriangleequilateral.cc</itemPath>
+        <itemPath>source/classetriangleisocele.cc</itemPath>
+        <itemPath>source/classetrianglerectangle.cc</itemPath>
+        <itemPath>source/classevecteur.cc</itemPath>
+        <itemPath>source/fonctions.cc</itemPath>
+        <itemPath>source/main.cc</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -26,6 +63,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="4">
@@ -36,11 +76,88 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <qt>
-        <modules>core gui</modules>
+        <modules>core gui opengl</modules>
       </qt>
       <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>headers</pElem>
+          </incDir>
+        </ccTool>
       </compileType>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="headers/Fenetre.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/ZoneAffichage.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classecarre.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classecercle.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classeellipse.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classeobjet2d.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classepoint.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classepolygonne.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classerectangle.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classetriangle.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classetriangleequilateral.hh"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="headers/classetriangleisocele.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classetrianglerectangle.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classevecteur.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/fonctions.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/include.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/main.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/tmp.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Fenetre.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/ZoneAffichage.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classecarre.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classecercle.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classeellipse.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classeobjet2d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classepoint.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classepolygonne.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classerectangle.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classetriangle.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classetriangleequilateral.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="source/classetriangleisocele.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classetrianglerectangle.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classevecteur.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/fonctions.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/main.cc" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="4">
@@ -68,7 +185,79 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="headers/Fenetre.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/ZoneAffichage.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classecarre.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classecercle.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classeellipse.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classeobjet2d.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classepoint.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classepolygonne.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classerectangle.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classetriangle.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classetriangleequilateral.hh"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="headers/classetriangleisocele.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classetrianglerectangle.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/classevecteur.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/fonctions.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/include.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/main.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="headers/tmp.hh" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Fenetre.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/ZoneAffichage.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classecarre.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classecercle.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classeellipse.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classeobjet2d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classepoint.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classepolygonne.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classerectangle.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classetriangle.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classetriangleequilateral.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="source/classetriangleisocele.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classetrianglerectangle.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/classevecteur.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/fonctions.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/main.cc" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

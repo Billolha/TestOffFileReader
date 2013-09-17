@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=TestOffFillReader
+PROJECTNAME=TestOffFileReader
 
 # Active Configuration
 DEFAULTCONF=Debug
